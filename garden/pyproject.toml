@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "garden"
+version = "0.1.0"
+description = "Just garden that you may control"
+authors = ["Schudov <schudov@ussc.ru>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.75.2"
+grpcio-tools = "^1.45.0"
+garden_api = {path = "../protos/pkgs/garden/dist/garden_api-0.0.1.tar.gz", develop = true}
+uvicorn = "^0.17.6"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

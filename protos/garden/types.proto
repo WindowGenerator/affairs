@@ -1,0 +1,25 @@
+syntax = "proto3";
+package garden;
+
+message Garden {
+  string name = 1;
+  string place = 2;
+  uint32 garden_id = 3;
+}
+
+message CreateGardenRequest {
+  string name = 1;
+  string place = 2;
+}
+
+message CreateGardenResult {
+  Garden garden = 1;
+}
+
+message GetGardensRequest {
+  string name = 1;
+}
+
+message GetGardensResult {
+  Garden garden = 1;
+}
